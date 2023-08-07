@@ -17,5 +17,5 @@ export default function ContactsList({ contacts }) {
                 {ContactsItemsJSX}
             </tbody>
         </table>
-    )
+    );
 }
