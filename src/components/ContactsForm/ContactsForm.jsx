@@ -18,7 +18,10 @@ export default function ContactsForm({ addContacts }) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        addContacts( number, email)
+        addContacts(contacts, number, email)
+        setContacts('');
+        setNumber('');
+        setEmail('');
     }
 
     return (

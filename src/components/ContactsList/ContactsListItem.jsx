@@ -1,11 +1,13 @@
 import React from 'react';
+import ContactsList from './ContactsList';
 
-export default function ContactsListItem({ contacts }) {
-    return (
-        <tr>
-            <td>{contacts.name }</td>
-            <td>{contacts.number }</td>
-            <td>{contacts.email }</td>
-        </tr>
-    );
-}
+
+
+export default function ContactsListItem({ items }) {
+    const ItemsJsx = items.map(listItem =>
+      <ContactsList
+      contacts={listItem.contacts} 
+      number={listItem.number}
+      email={listItem.email} />
+      )
+  }
