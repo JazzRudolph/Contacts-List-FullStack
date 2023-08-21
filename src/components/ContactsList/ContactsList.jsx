@@ -1,8 +1,8 @@
 import React from 'react';
 import ContactsListItem from './ContactsListItem';
 
-export default function ContactsList({ contacts }) {
-    let ContactsItemsJSX = contacts.map(contacts => <ContactsListItem contacts={contacts} key={contacts.id} />)
+export default function ContactsList({ contacts, deleteContact }) {
+    let ContactsItemJSX = contacts.map(contacts => <ContactsListItem contacts={contacts} key={contacts.id} deleteContact={deleteContact} />)
 
     return (
         <table>
@@ -11,10 +11,11 @@ export default function ContactsList({ contacts }) {
                     <th>Name</th>
                     <th>Number</th>
                     <th>Email</th>
+                    <th>Actions</th>
                 </tr>
             </thread>
             <tbody>
-                {ContactsItemsJSX}
+                {ContactsItemJSX}
             </tbody>
         </table>
     );

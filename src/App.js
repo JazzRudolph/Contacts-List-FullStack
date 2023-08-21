@@ -2,15 +2,12 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import ContactsForm from './components/ContactsForm/ContactsForm';
 import ContactsList from './components/ContactsList/ContactsList';
-import ContactsListItem from './components/ContactsList/ContactsListItem';
 
 
 function App() {
-  const [contacts, setContacts] = useState([
+  const [contacts, setContacts] = useState([]);
 
-  ]);
-
-  function loadInfo() {
+  function loadData() {
     fetch("https://w94wdk-8080.csb.app/api/list/")
       .then(x => x.json())
       .then(response => {
@@ -18,15 +15,10 @@ function App() {
       });
   }
 
-  function ContactsListItem(props) {
-    return <li>
-      {props.contacts}, {props.number}, {props.email}
-      <button>Delete</button></li>;
-  }
+  useEffect(loadData, []);
 
 
 
-  useEffect(loadInfo, []);
 
   function addContacts(contacts, number, email) {
     fetch('https://w94wdk-8080.csb.app/api/list/new', { 
@@ -42,15 +34,26 @@ function App() {
       mode: 'cors' 
     }) 
       .then(x => x.json()) 
-      .then(loadInfo); 
+      .then(loadData); 
+  }
+
+  function deleteContact(id) {
+    fetch(`https://w94wdk-8080.csb.app/api/list/${id}/delete`, {
+      method: "DELETE",
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+      mode: "cors",
+    })
+      .then((x) => x.json())
+      .then(loadData);
   }
 
   return (
     <div className="App" >
       <h1>Smile</h1>
       <ContactsForm addContacts={addContacts} />
-      <ContactsList contacts={contacts} />
-      <ContactsListItem item={ContactsList} />
+      <ContactsList contacts={contacts} deleteContact={ deleteContact } />
     </div>
 );
 }

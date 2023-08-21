@@ -1,13 +1,19 @@
 import React from 'react';
-import ContactsList from './ContactsList';
 
 
 
-export default function ContactsListItem({ items }) {
-    const ItemsJsx = items.map(listItem =>
-      <ContactsList
-      contacts={listItem.contacts} 
-      number={listItem.number}
-      email={listItem.email} />
-      )
-  }
+export default function ContactsListItem({ contacts, deleteContact }) {
+    function handleClick() {
+      deleteContact(contacts.id)
+    }
+
+    return (
+        <tr>
+            <td>{contacts.contacts}</td>
+            <td>{contacts.number}</td>
+            <td>{contacts.email}</td>
+            <td><button onClick={handleClick}>Delete</button></td>
+        </tr>
+    )
+
+}
