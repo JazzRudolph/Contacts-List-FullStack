@@ -9,7 +9,7 @@ export default function ContactsList({ contacts, deleteContact }) {
             <thread>
                 <tr>
                     <th>Name</th>
-                    <th>Number</th>
+                    <th>Phone</th>
                     <th>Email</th>
                     <th>Actions</th>
                 </tr>

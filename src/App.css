@@ -1,12 +1,12 @@
 * {
   text-align: center;
-  background-color: fuchsia;
+  background-color: rgb(33, 81, 194);
   margin: auto;
 }
 
 .App {
   text-align: center;
-  
+  color: white;
 }
 
 .App-logo {

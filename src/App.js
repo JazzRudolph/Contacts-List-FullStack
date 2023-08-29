@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import ContactsForm from './components/ContactsForm/ContactsForm';
 import ContactsList from './components/ContactsList/ContactsList';
+import NavBar from './components/NavBar/NavBar';
 
 
 function App() {
@@ -51,7 +52,7 @@ function App() {
 
   return (
     <div className="App" >
-      <h1>Smile</h1>
+      <NavBar />
       <ContactsForm addContacts={addContacts} />
       <ContactsList contacts={contacts} deleteContact={ deleteContact } />
     </div>
