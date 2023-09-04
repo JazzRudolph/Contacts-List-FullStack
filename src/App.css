@@ -1,6 +1,6 @@
 * {
   text-align: center;
-  background-color: rgb(33, 81, 194);
+  background-color: rgb(4, 9, 80);
   margin: auto;
 }
 
@@ -9,16 +9,7 @@
   color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #b91355;
@@ -31,15 +22,33 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+.navbar{
+  background: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.brand, .list_item{
+  color: rgb(255, 255, 255);
+}
+
+.btns{
+  background: rgb(15, 142, 12);
+  color: white;
+  border: 10px solid rgb(5, 115, 46) ;
+  border-radius: 50px;
+}
+
+.intro{
+  margin: 20px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.inputField{
+  margin: 10px;
+  background: white;
+  color: rgb(4, 9, 80);
 }

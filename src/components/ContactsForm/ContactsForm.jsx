@@ -25,20 +25,23 @@ export default function ContactsForm({ addContacts }) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <div>
+        <h2>Add New Contact</h2>
+            <form onSubmit={handleSubmit}>
             <label>
                 Name:
-                <input type="text" name="name" required value={contacts} onChange={handleNameChange}></input>
+                <input className='inputField' type="text" name="name" required value={contacts} onChange={handleNameChange}></input>
             </label>
             <label>
                 Phone #:
-                <input type="tel" name="number" required value={number} onChange={handleNumberChange}></input>
+                <input className='inputField' type="tel" name="number" required value={number} onChange={handleNumberChange}></input>
             </label>
             <label>
                 Email:
-                <input type="email" name="email" value={email} required onChange={handleEmailChange}></input>
+                <input className='inputField' type="email" name="email" value={email} required onChange={handleEmailChange}></input>
             </label>
             <button type="submit"> Submit </button>
         </form>
+        </div>
     );
 }
