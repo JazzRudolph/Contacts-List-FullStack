@@ -9,7 +9,7 @@ export default function ContactsListItem({ contacts, deleteContact }) {
 
     return (
         <tr className='listItem'>
-            <td>{contacts.contacts}</td>
+            <td>{contacts.name}</td>
             <td>{contacts.number}</td>
             <td>{contacts.email}</td>
             <td><button onClick={handleClick}>Delete</button></td>
