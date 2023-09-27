@@ -4,6 +4,7 @@ import ContactsForm from './components/ContactsForm/ContactsForm';
 import ContactsList from './components/ContactsList/ContactsList';
 import NavBar from './components/NavBar/NavBar';
 import Intro from './components/Intro/Intro';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -58,7 +59,7 @@ function App() {
       <Intro />
       <ContactsForm addContacts={addContacts} />
       <ContactsList contacts={contacts} deleteContact={deleteContact} />
-  
+      <Footer />
     </div>
 );
 }

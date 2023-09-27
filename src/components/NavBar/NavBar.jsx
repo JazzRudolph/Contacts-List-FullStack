@@ -5,15 +5,15 @@ const NavBar = () => {
 
     const menuData = [
         {
-            path: '/',
+            path: '#home',
             name: "Home"
         },
         {
-            path: '/add-contacts',
+            path: './#contactform',
             name: "Add Contacts"
         },
         {
-            path: 'contacts-list',
+            path: './#contactlist',
             name: "Contacts List"
         }
     ]
@@ -28,14 +28,11 @@ const NavBar = () => {
                     <Nav className="ms-auto">
                         {
                             menuData.map((item) => (
-                                <NavLink to={item.path} key={item.name}>
-                                    <div className="list_item">{item.name}</div>
-                                </NavLink>
+                                <a className="list_item" href={item.path} key={item.name}>
+                                    {item.name}
+                                </a>
                             ))
                         }
-                    </Nav>
-                    <Nav className="ms-auto">
-                        <button className="btns">Sign Up</button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

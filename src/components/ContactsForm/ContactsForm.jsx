@@ -25,8 +25,8 @@ export default function ContactsForm({ addContacts }) {
     }
 
     return (
-        <div>
-        <h2>Add New Contact</h2>
+        <div className='conectinsForm' id="contactform">
+        <h2>New Connections</h2>
             <form onSubmit={handleSubmit}>
             <label>
                 Name:
@@ -40,7 +40,7 @@ export default function ContactsForm({ addContacts }) {
                 Email:
                 <input className='inputField' type="email" name="email" value={email} required onChange={handleEmailChange}></input>
             </label>
-            <button type="submit"> Submit </button>
+            <button type="submit" className="btn btn-outline-dark"> Submit </button>
         </form>
         </div>
     );
