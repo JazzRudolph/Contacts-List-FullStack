@@ -2,8 +2,6 @@
   text-align: center;
   flex-direction: column;
   background-color: rgb(157, 151, 241);
-  margin: 5px;
-  padding: 5px;
   
 }
 
@@ -11,6 +9,8 @@
   text-align: center;
   color: rgb(43, 47, 95);
   font-family: 'Libre Baskerville', serif;
+  margin: 10px;
+  padding: 10px;
 }
 
 
@@ -33,11 +33,16 @@
   margin: auto;
   padding: 5px;
   width: auto;
-
+  justify-content: space-evenly;
+}
+.brand{
+  color: rgb(43, 47, 95);
 }
 
-.brand, .list_item{
+ .list_item{
   color: rgb(43, 47, 95);
+  margin: 10px;
+  padding: 10px;
 }
 
 
@@ -50,15 +55,18 @@
 .intoPic{
   max-width: 100%;
   height: auto;
-  border-radius: 75px;
-  
+  border-radius: 75px;  
 }
 
-.conectinsForm{
+.introParagrah{
+  font-size: 25px;
+}
+
+.connectinsForm{
   display: block;
-  width: 100%;
   margin: 10px;
   padding: 10px;
+ 
 }
 
 .inputField{
@@ -69,34 +77,49 @@
   text-align: left;
 }
 
+.submitBtn{
+  margin: 10px;
+  padding: 10px;
+}
+
 .listMain{
   
   margin: 10px;
   padding: 10px;
   width: 100%;
-  
+}
+
+.listHead{
+  margin: 20px;
+  padding: 20px ;
+  justify-content: space-evenly;
+  display: flexbox;
 }
 
 .list{
   align-items: center;
   display: flex;
+  justify-content: center;
   margin: 10px;
   padding: 10px;
-  border: black solid 10px;
 }
 
 .footer{
-  display: flex;
+  display: inline;
   margin: 10px;
   padding: 10px;
   width: 100%;
   text-align: right;
+  align-items: center;
+
 }
 
 .footerIcon{
   flex-direction: row;
   display: flex;
   list-style: none;
-  
-  
+  margin: 5px;
+  padding: 5px;
+  justify-content: space-between;
+  background: none;
 }

@@ -6,9 +6,9 @@ export default function ContactsList({ contacts, deleteContact }) {
 
     return (
         <div
-            className='listMain' id="contactlist">
-            <h1>Connections</h1>
-                <table className='list'>
+            className='listMain col-lg-8' id="contactlist">
+            <h2>Connections</h2>
+                <table className='list '>
                     <thead className='listHead'>
                         <tr>
                             <th>Name</th>

@@ -8,7 +8,7 @@ export default function ContactsListItem({ contacts, deleteContact }) {
     }
 
     return (
-        <tr className='listItem'>
+        <tr className='listItem '>
             <td>{contacts.name}</td>
             <td>{contacts.number}</td>
             <td>{contacts.email}</td>

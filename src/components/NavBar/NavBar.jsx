@@ -10,11 +10,11 @@ const NavBar = () => {
         },
         {
             path: './#contactform',
-            name: "Add Contacts"
+            name: "Add Connection"
         },
         {
             path: './#contactlist',
-            name: "Contacts List"
+            name: "Connections List"
         }
     ]
 

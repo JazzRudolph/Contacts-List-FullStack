@@ -6,7 +6,8 @@ let Intro = () => {
         <div className='intro'>
                         <img src="/images/connect-img2.png" className='intoPic'  alt=""/>
             <h1>My Connections</h1>
-            <p>Welcome to My Connections! This is the only app you will need to store any and all connections you make. </p>
+            <p className='introParagrah'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repudiandae quibusdam voluptatum earum exercitationem, ducimus corporis deleniti incidunt asperiores hic tenetur consequatur odio? Accusantium officia quas itaque tenetur debitis excepturi.</p>
+
 
         </div>    
     );
