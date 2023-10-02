@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Contacts-List-FullStack/static/css/main.92527463.css",
+    "main.js": "/Contacts-List-FullStack/static/js/main.cd932d3c.js",
+    "static/js/787.f22c377a.chunk.js": "/Contacts-List-FullStack/static/js/787.f22c377a.chunk.js",
+    "index.html": "/Contacts-List-FullStack/index.html",
+    "main.92527463.css.map": "/Contacts-List-FullStack/static/css/main.92527463.css.map",
+    "main.cd932d3c.js.map": "/Contacts-List-FullStack/static/js/main.cd932d3c.js.map",
+    "787.f22c377a.chunk.js.map": "/Contacts-List-FullStack/static/js/787.f22c377a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92527463.css",
+    "static/js/main.cd932d3c.js"
+  ]
+}
