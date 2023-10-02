@@ -39,7 +39,7 @@ export default function ContactsForm({ addContacts }) {
             <label>
                 Email:
                 <input className='inputField' type="email" name="email" value={email} required onChange={handleEmailChange}></input>
-            </label>
+                </label>
             <button type="submit" className="btn btn-outline-dark submitBtn"> Submit </button>
         </form>
         </div>

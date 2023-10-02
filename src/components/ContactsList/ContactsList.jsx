@@ -6,9 +6,9 @@ export default function ContactsList({ contacts, deleteContact }) {
 
     return (
         <div
-            className='listMain col-lg-8' id="contactlist">
+            className='list-group-numbered listMain col-lg-11' id="contactlist">
             <h2>Connections</h2>
-                <table className='list '>
+                <table className='list'>
                     <thead className='listHead'>
                         <tr>
                             <th>Name</th>
@@ -17,7 +17,7 @@ export default function ContactsList({ contacts, deleteContact }) {
                             <th>Actions</th>
                         </tr>
                     </thead>
-                    <tbody className='listBody'>
+                    <tbody>
                         {ContactsItemJSX}
                     </tbody>
                 </table>
