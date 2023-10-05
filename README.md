@@ -12,6 +12,10 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+#### Visit Website Hosted Link
+https://jazzrudolph.github.io/Contacts-List-FullStack/
 
+##### Manually start server-side application 
+https://codesandbox.io/p/sandbox/contactslist-w94wdk?file=%2Findex.js%3A8%2C16-12%2C15
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
