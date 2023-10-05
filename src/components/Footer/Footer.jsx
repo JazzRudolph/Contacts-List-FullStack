@@ -3,12 +3,30 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='footer'>
-            <div className='footerIcon'>
-                <li><i className="bi bi-twitter"></i></li>
-                <li><i className="bi bi-envelope-fill"></i></li>
-                <li><i className="bi bi-facebook"></i></li>
-                <p>Copyright 2023 <i className="bi bi-c-circle-fill"></i></p>
-            </div>
+            <ul className='footerIcon'>
+                <a href='#' className='icon'>
+                    <li>
+                        <i className="bi bi-twitter">
+                        </i>
+                    </li>
+                </a>
+                <a href='#' className='icon'>
+                    <li>
+                        <i className="bi bi-envelope-fill">
+                        </i>
+                    </li>
+                </a>
+                <a href='#' className='icon'>
+                    <li>
+                        <i className="bi bi-facebook">
+                        </i>
+                    </li>
+                </a>
+            </ul>
+            <p>Copyright 2023
+                    <i className="bi bi-c-circle-fill">
+                    </i>
+                </p>
       </div>  
     );
 }

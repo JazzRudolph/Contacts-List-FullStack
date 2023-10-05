@@ -24,7 +24,7 @@ const NavBar = () => {
             <Container>
                 <Navbar.Brand href="#home" className="brand">My Connections</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav" className='navbarContainer'>
                     <Nav className="ms-auto">
                         {
                             menuData.map((item) => (
